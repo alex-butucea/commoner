@@ -1,0 +1,21 @@
+{
+    "name": "alex-butucea/commoner",
+    "description": "A collection of generic Phing targets for PHP projects",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/alex-butucea/commoner",
+    "keywords": [
+        "commoner"
+    ],
+    "authors": [
+        {
+            "name": "Alex Butucea",
+            "email": "alex826@gmail.com",
+            "homepage": "https://github.com/alex-butucea",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.2"
+    }
+}
