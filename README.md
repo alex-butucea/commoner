@@ -77,12 +77,10 @@ Below is a snippet from the Commoner build file with above properties and their 
 <property name="coverage-report-file"  value="coverage.xml"/>
 ```
 
-## Requirements
-- PHP 5.2+
-- PHPUnit 3.6.0+
+## Prerequisites
+- Composer
+- PHP 5.3.3+
 - Xdebug 2.0.5+
-- phpDocumentor 2.0.0b7+ (PEAR package)
-- PHP_CodeSniffer (PEAR package)
 
 ---------------------------------------------------
 Copyright (c) 2013 Alex Butucea <alex826@gmail.com>
