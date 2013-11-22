@@ -20,6 +20,7 @@
     <!-- ============================================  -->
     <!-- Filenames used by dependent targets           -->
     <!-- ============================================  -->
+    <property name="autoload-file"         value="autoload.php"/>
     <property name="apigen-file"           value="apigen.php"/>
     <property name="standards-report-file" value="standards"/>
     <property name="phplint-report-file"   value="phplint"/>
@@ -55,7 +56,7 @@
     <target
         name="prepare"
         description="Execute all preparation tasks"
-        depends="prepare-build-dir, prepare-coverage-report"
+        depends="prepare-build-dir, prepare-autoloader, prepare-coverage-report"
     />
 
     <!-- ============================================  -->
@@ -69,6 +70,13 @@
         <mkdir dir="${coverage-report-dir}"/>
         <mkdir dir="${standards-report-dir}"/>
         <mkdir dir="${phplint-report-dir}"/>
+    </target>
+
+    <!-- ============================================  -->
+    <!-- Target: prepare-autoloader                    -->
+    <!-- ============================================  -->
+    <target name="prepare-autoloader" description="Prepare autoloader">
+        <php expression="include('${vendor-dir}/${autoload-file}')"/>
     </target>
 
     <!-- ============================================  -->
