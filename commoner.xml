@@ -4,9 +4,11 @@
     <!-- ============================================  -->
     <!-- Directories used by dependent targets         -->
     <!-- ============================================  -->
+    <property name="vendor-dir"                 value="${project.basedir}/vendor"/>
     <property name="source-dir"                 value="${project.basedir}/src"/>
     <property name="tests-dir"                  value="${project.basedir}/tests"/>
     <property name="build-dir"                  value="${project.basedir}/build"/>
+    <property name="apigen-dir"                 value="${vendor-dir}/apigen/apigen"/>
     <property name="doc-dir"                    value="${build-dir}/doc"/>
     <property name="standards-report-dir"       value="${build-dir}/standards-report"/>
     <property name="phplint-report-dir"         value="${build-dir}/phplint-report"/>
@@ -18,6 +20,7 @@
     <!-- ============================================  -->
     <!-- Filenames used by dependent targets           -->
     <!-- ============================================  -->
+    <property name="apigen-file"           value="apigen.php"/>
     <property name="standards-report-file" value="standards"/>
     <property name="phplint-report-file"   value="phplint"/>
     <property name="test-bootstrap"        value="bootstrap.php"/>
@@ -133,16 +136,13 @@
     <!-- ============================================  -->
     <!-- Target: generate-phpdoc                       -->
     <!-- ============================================  -->
-    <target name="generate-phpdoc" description="Generate PHP Documenter 2 Docs" depends="prepare">
-        <phpdoc2
+    <target name="generate-phpdoc" description="Generate ApiGen Docs" depends="prepare">
+        <apigen
+            executable="${apigen-dir}/${apigen-file}"
             title="API Documentation"
-            destdir="${doc-dir}"
-            template="responsive"
-        >
-            <fileset dir="${source-dir}">
-                <include name="**/*.php" />
-            </fileset>
-        </phpdoc2>
+            destination="${doc-dir}"
+            source="${source-dir}"
+        />
     </target>
 
     <!-- ============================================  -->
