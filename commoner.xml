@@ -15,7 +15,7 @@
     <property name="test-log-dir"               value="${build-dir}/test-log"/>
     <property name="test-report-dir"            value="${build-dir}/test-report"/>
     <property name="coverage-report-dir"        value="${build-dir}/coverage-report"/>
-    <property name="coverage-report-styles-dir" value="/usr/share/php/data/phing/etc"/>
+    <property name="coverage-report-styles-dir" value="${vendor-dir}/phing/phing/etc"/>
 
     <!-- ============================================  -->
     <!-- Filenames used by dependent targets           -->
