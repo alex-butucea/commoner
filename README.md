@@ -8,7 +8,7 @@ Install via Composer and include commoner.xml in your Phing build file to inheri
 - `clean` - Cleanup build artifacts
 - `generate` - Execute all generation targets:
     - `generate-coverage-report` - Generate code coverage report
-    - `generate-phpdoc` - Generate PHP Documenter 2 Docs
+    - `generate-phpdoc` - Generate ApiGen PHP Docs
     - `generate-phplint-report` - Generate PHP Lint report
     - `generate-standards-report` - Generate PSR-2 code standards report
 - `prepare` - Execute all preparation tasks:
