@@ -23,7 +23,7 @@ Be sure to define a `basedir` property within your project build file to ensure 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="foo" basedir="." default="build">
-    <import file="${project.basedir}/vendor/commoner/commoner.xml"/>
+    <import file="${project.basedir}/vendor/alex-butucea/commoner/commoner.xml"/>
 </project>
 ```
 
