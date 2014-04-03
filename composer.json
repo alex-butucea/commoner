@@ -20,6 +20,6 @@
         "ext-xdebug": ">=2.0.5",
         "phing/phing": "<=2.6.1",
         "apigen/apigen": "*",
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "3.7.*"
     }
 }
