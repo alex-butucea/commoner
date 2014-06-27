@@ -18,8 +18,10 @@
     "require": {
         "php": ">=5.3.3",
         "ext-xdebug": ">=2.0.5",
-        "phing/phing": "<=2.6.1",
-        "apigen/apigen": "*",
-        "phpunit/phpunit": "3.7.*"
+        "phing/phing": "2.6.*",
+        "nette/nette": "2.1.*",
+        "apigen/apigen": "2.8.*",
+        "phpunit/phpunit": "3.7.*",
+        "squizlabs/php_codesniffer": "1.4.*"
     }
 }
