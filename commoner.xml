@@ -175,6 +175,8 @@
         <phpcodesniffer
             standard="PSR2"
             allowedFileExtensions="php"
+            skipversioncheck="true"
+            encoding="UTF-8"
         >
             <formatter type="full" outfile="${standards-report-dir}/${standards-report-file}"/>
             <fileset dir="${source-dir}">
