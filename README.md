@@ -90,6 +90,7 @@ Below is a snippet from the Commoner build file with above properties and their 
 - Composer
 - PHP 5.3.3+
 - Xdebug 2.0.5+
+- XSL
 
 ---------------------------------------------------
 Copyright (c) 2013 Alex Butucea <alex826@gmail.com>

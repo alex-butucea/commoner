@@ -17,6 +17,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
+        "ext-xsl": "*",
         "ext-xdebug": ">=2.0.5",
         "phing/phing": "2.6.*",
         "nette/nette": "2.1.*",
